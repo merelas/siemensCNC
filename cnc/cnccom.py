@@ -8,6 +8,9 @@ from tkinter import *
 # India, Bangalore
 # 2017/02/15
 
+def comm ():
+    return
+
 __author__ = "Daniel Merelas"
 __license__ = "GNU3"
 __version__ = "1.0"
@@ -15,7 +18,7 @@ __email__ = "daniel@merelas.es"
 
 #Instancia
 window = Tk()
-window.title('Siemens RPC' + __version__)
+window.title('Siemens RPC - V' + __version__)
 window.resizable(False, False)
 
 #Centering the window in the screen
@@ -26,3 +29,10 @@ hs = window.winfo_screenheight()
 x = (ws/2) - (w/2)
 y = (hs/2) - (h/2)
 window.geometry('+%d+%d' % (x, y))
+
+#Config button
+configButton = Button(window, text='Config communication', command=comm, width=40)
+configButton.grid(row=1, column=3)
+
+#Main window
+window.mainloop()
