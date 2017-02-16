@@ -24,6 +24,22 @@ class machine:
     hostID = "H1";
     hostPort = "3010";
 
+class machineStatus:
+    host="";
+    machine="";
+    orderNum="";
+    machineMode="";
+    machineStatus="";
+    ncProgram="";
+    clampCubeSide="";
+    dockPos="";
+    dockPosStatus="";
+    wpc="";
+    wpcStatus="";
+    resInt1="";
+    resInt2="";
+    resByte="";
+
 #Instancia
 window = Tk()
 window.title('Nixo - V' + __version__)
