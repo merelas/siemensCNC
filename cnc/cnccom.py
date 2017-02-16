@@ -8,17 +8,25 @@ from tkinter import *
 # India, Bangalore
 # 2017/02/15
 
-def comm ():
-    return
-
 __author__ = "Daniel Merelas"
 __license__ = "GNU3"
 __version__ = "1.0"
 __email__ = "daniel@merelas.es"
 
+def comm ():
+    return
+
+class machine:
+    machineID = "M1";
+    machineIP = "192.168.101.11";
+    machinePort = "3011";
+    machineTimeout = "5";
+    hostID = "H1";
+    hostPort = "3010";
+
 #Instancia
 window = Tk()
-window.title('Siemens RPC - V' + __version__)
+window.title('Nixo - V' + __version__)
 window.resizable(False, False)
 
 #Centering the window in the screen
@@ -36,3 +44,4 @@ configButton.grid(row=1, column=3)
 
 #Main window
 window.mainloop()
+
